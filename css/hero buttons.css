@@ -1,0 +1,17 @@
+.btn{
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        background .35s ease;
+}
+
+.btn-primary:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 18px 45px rgba(255,122,0,.35);
+}
+
+.btn-secondary:hover{
+    transform: translateY(-6px);
+    background: var(--primary);
+    color: #fff;
+}

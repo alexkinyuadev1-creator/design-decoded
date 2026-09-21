@@ -1,0 +1,46 @@
+:root{
+
+    --primary:#FF7A00;
+    --secondary:#6D28D9;
+
+    --gradient:linear-gradient(135deg,#FF7A00,#6D28D9);
+
+    --dark:#111827;
+    --dark-light:#1F2937;
+
+    --white:#FFFFFF;
+
+    --light:#F3F4F6;
+
+    --gray:#6B7280;
+
+    --border:#E5E7EB;
+
+    --heading-font:'Space Grotesk',sans-serif;
+    --body-font:'Inter',sans-serif;
+
+    --fs-xs:.875rem;
+    --fs-sm:1rem;
+    --fs-md:1.2rem;
+    --fs-lg:2rem;
+    --fs-xl:3.5rem;
+    --fs-xxl:5rem;
+
+    --section-padding:120px;
+
+    --radius:18px;
+
+    --shadow-small:0 10px 25px rgba(0,0,0,.08);
+    --shadow-medium:0 20px 40px rgba(0,0,0,.12);
+    --shadow-large:0 30px 60px rgba(0,0,0,.18);
+
+    --transition:.35s ease;
+
+    --space-xs: 10px;
+    --space-sm: 20px;
+    --space-md: 40px;
+    --space-lg: 70px;
+    --space-xl: 100px;
+    --space-xxl: 140px;
+
+}

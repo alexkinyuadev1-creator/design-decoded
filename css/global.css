@@ -1,0 +1,451 @@
+/* ==========================================================
+   GLOBAL RESET
+========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* ==========================================================
+   GLOBAL
+========================================================== */
+
+.container{
+
+    width:min(90%,1200px);
+
+    margin: -10px auto;
+
+}
+
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+
+.section-title h2{
+
+    font-family:var(--heading-font);
+
+    font-size:3rem;
+
+    margin-bottom:15px;
+
+    padding-top: 30px;
+
+    background: var(--gradient);
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+
+}
+
+
+.section-title p{
+
+    color:var(--gray);
+
+    max-width:650px;
+
+    margin:auto;
+
+}
+
+
+/* ==========================================================
+   TYPOGRAPHY
+========================================================== */
+
+h1,h2,h3,h4{
+
+    font-family:var(--heading-font);
+
+    line-height:1.15;
+
+}
+
+
+h1{
+
+    font-size:var(--fs-xxl);
+
+}
+
+
+h2{
+
+    font-size:var(--fs-lg);
+
+}
+
+
+h3{
+
+    font-size:1.4rem;
+
+}
+
+
+p{
+
+    color:var(--gray);
+
+}
+
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:.5rem;
+
+    padding:18px 38px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+    font-size: 1rem;
+
+}
+
+
+.btn-primary{
+
+    background:var(--gradient);
+
+    color:white;
+
+    box-shadow:var(--shadow-small);
+
+}
+
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:var(--shadow-medium);
+
+}
+
+
+.btn-secondary{
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+
+}
+
+
+.btn-secondary:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.section-tag{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: rgba(255, 122, 0, .08);
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.lucide{
+    width: 18px;
+    height: 18px;
+    stroke-width: 2;
+}
+
+.btn2{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:.5rem;
+
+    padding:10px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+    font-size: 1rem;
+
+    margin-left: 20px;
+
+}
+
+.btn-secondary2{
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+
+}
+
+.btn-secondary2:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* ==========================================================
+   MOBILE BOTTOM NAVIGATION
+========================================================== */
+
+.mobile-bottom-nav {
+
+    display: none;
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 767px) {
+
+    /* ==========================================================
+   MOBILE BOTTOM NAVIGATION
+========================================================== */
+
+.mobile-bottom-nav {
+
+    position: fixed;
+
+    left: 50%;
+    bottom: 15px;
+
+    transform: translateX(-50%);
+
+    width: min(92%, 430px);
+
+    height: 68px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 7px 10px;
+
+    z-index: 9999;
+
+    /* Glass morphism */
+    background: rgba(255, 255, 255, 0.68);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 255, 255, 0.65);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 10px 35px rgba(15, 23, 42, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+
+/* ==========================================================
+   NAV ITEM
+========================================================== */
+
+.mobile-nav-item {
+
+    position: relative;
+
+    width: 62px;
+    height: 54px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 2px;
+
+    text-decoration: none;
+
+    color: #64748b;
+
+    border-radius: 16px;
+
+    transition:
+        color .3s ease,
+        background .3s ease;
+}
+
+
+/* ==========================================================
+   ICON
+========================================================== */
+
+.mobile-nav-item svg {
+
+    width: 21px;
+    height: 21px;
+
+    stroke-width: 2;
+
+    transition:
+        transform .35s cubic-bezier(.4,0,.2,1),
+        opacity .3s ease;
+}
+
+
+/* ==========================================================
+   PAGE LABEL
+========================================================== */
+
+.mobile-nav-item span {
+
+    font-size: .68rem;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    opacity: 0;
+
+    transform: translateY(7px);
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition:
+        opacity .3s ease,
+        transform .35s ease,
+        max-height .35s ease;
+}
+
+
+/* ==========================================================
+   ACTIVE ITEM
+========================================================== */
+
+.mobile-nav-item.active {
+
+    color: var(--primary);
+
+    background: rgba(255, 122, 0, .10);
+}
+
+
+/* Icon moves upward */
+
+.mobile-nav-item.active svg {
+
+    transform: translateY(-3px);
+}
+
+
+/* Label appears */
+
+.mobile-nav-item.active span {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    max-height: 15px;
+}
+
+
+/* ==========================================================
+   TAP FEEDBACK
+========================================================== */
+
+.mobile-nav-item:active {
+
+    transform: scale(.92);
+
+}
+
+
+/* ==========================================================
+   MOBILE ONLY
+========================================================== */
+
+@media (min-width: 768px) {
+
+    .mobile-bottom-nav {
+
+        display: none;
+
+    }
+
+}
+
+    .mobile-nav-item:active svg {
+
+        transform: scale(.9);
+
+    }
+
+
+    /* ======================================================
+       GIVE PAGE CONTENT ROOM ABOVE NAV
+    ====================================================== */
+
+    body {
+
+        padding-bottom: 100px;
+
+    }
+
+}

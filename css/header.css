@@ -1,0 +1,782 @@
+/* ==========================================================
+   DESKTOP HEADER
+========================================================== */
+
+.site-header {
+
+    position: fixed;
+
+    width: 100%;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border-bottom: 1px solid rgba(17, 24, 39, 0.08);
+
+    z-index: 1000;
+
+}
+
+
+/* ==========================================================
+   HEADER INNER
+========================================================== */
+
+.header-inner {
+
+    width: min(100% - 80px, 1400px);
+
+    height: 78px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+/* ==========================================================
+   LEFT SIDE
+========================================================== */
+
+.header-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+}
+
+
+/* ==========================================================
+   LOGO
+========================================================== */
+
+.header-logo {
+
+    text-decoration: none;
+
+    color: var(--dark);
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 1.7rem;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+}
+
+
+.header-logo span {
+
+    color: var(--primary);
+
+}
+
+
+/* ==========================================================
+   HEADER BUTTONS
+========================================================== */
+
+.header-icon-btn,
+.header-menu-toggle {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(17, 24, 39, 0.08);
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    color: var(--dark);
+
+    cursor: pointer;
+
+    transition: .3s ease;
+
+}
+
+
+.header-icon-btn svg,
+.header-menu-toggle svg {
+
+    width: 19px;
+
+    height: 19px;
+
+}
+
+
+.header-icon-btn:hover,
+.header-menu-toggle:hover {
+
+    color: var(--primary);
+
+    border-color: rgba(255, 122, 0, .3);
+
+    background: rgba(255, 122, 0, .06);
+
+}
+
+
+/* ==========================================================
+   MENU BUTTON
+========================================================== */
+
+.header-menu-toggle {
+
+    background: var(--dark);
+
+    color: #ffffff;
+
+    border-color: var(--dark);
+
+}
+
+
+.header-menu-toggle:hover {
+
+    background: var(--primary);
+
+    color: #ffffff;
+
+    border-color: var(--primary);
+
+}
+
+
+/* ==========================================================
+   RIGHT SIDE
+========================================================== */
+
+.header-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+/* ==========================================================
+   NOTIFICATION
+========================================================== */
+
+.notification-btn {
+
+    position: relative;
+
+}
+
+
+.notification-dot {
+
+    position: absolute;
+
+    top: 8px;
+
+    right: 8px;
+
+    width: 7px;
+
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: var(--primary);
+
+    border: 2px solid #ffffff;
+
+}
+
+
+/* ==========================================================
+   PROFILE
+========================================================== */
+
+.header-profile {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-left: 10px;
+
+    padding-left: 18px;
+
+    border-left: 1px solid rgba(17, 24, 39, .1);
+
+}
+
+
+.header-profile-text {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    font-size: .9rem;
+
+}
+
+
+.header-profile-text span {
+
+    color: #64748b;
+
+}
+
+
+.header-profile-text strong {
+
+    color: var(--dark);
+
+}
+
+
+/* ==========================================================
+   AVATAR
+========================================================== */
+
+.header-avatar {
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: var(--gradient);
+
+    color: #ffffff;
+
+    font-weight: 700;
+
+    border: 2px solid rgba(255, 255, 255, .8);
+
+}
+
+
+/* ==========================================================
+   NAVIGATION PANEL
+========================================================== */
+
+.header-navigation {
+
+    position: absolute;
+
+    top: 100%;
+
+    left: 0;
+
+    width: 100%;
+
+    background: rgba(255, 255, 255, .98);
+
+    border-bottom: 1px solid rgba(17, 24, 39, .08);
+
+    box-shadow: 0 20px 40px rgba(17, 24, 39, .08);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(-12px);
+
+    transition:
+        opacity .3s ease,
+        transform .3s ease,
+        visibility .3s ease;
+
+}
+
+
+/* OPEN STATE */
+
+.header-navigation.active {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+
+}
+
+
+/* ==========================================================
+   NAVIGATION INNER
+========================================================== */
+
+.header-navigation-inner {
+
+    width: min(100% - 80px, 1400px);
+
+    margin: 0 auto;
+
+    padding: 30px 0 35px;
+
+}
+
+
+/* ==========================================================
+   NAVIGATION HEADING
+========================================================== */
+
+.navigation-heading {
+
+    margin-bottom: 20px;
+
+}
+
+
+.navigation-heading span {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: var(--primary);
+
+    font-size: .75rem;
+
+    font-weight: 700;
+
+    letter-spacing: .12em;
+
+}
+
+
+.navigation-heading p {
+
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: .9rem;
+
+}
+
+
+/* ==========================================================
+   NAVIGATION LINKS
+========================================================== */
+
+.desktop-navigation {
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 12px;
+
+}
+
+
+.desktop-navigation a {
+
+    display: grid;
+
+    grid-template-columns: 34px 1fr 18px;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 18px;
+
+    text-decoration: none;
+
+    color: var(--dark);
+
+    background: #ffffff;
+
+    border: 1px solid rgba(17, 24, 39, .08);
+
+    border-radius: 16px;
+
+    transition: .3s ease;
+
+}
+
+
+.desktop-navigation a > svg:first-child {
+
+    width: 19px;
+
+    height: 19px;
+
+    color: var(--primary);
+
+}
+
+
+.desktop-navigation a > svg:last-child {
+
+    width: 16px;
+
+    height: 16px;
+
+    color: #94a3b8;
+
+    transition: .3s ease;
+
+}
+
+
+.desktop-navigation a span {
+
+    font-weight: 700;
+
+}
+
+
+.desktop-navigation a:hover {
+
+    transform: translateY(-3px);
+
+    border-color: rgba(255, 122, 0, .25);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,122,0,.06),
+            rgba(109,40,217,.05)
+        );
+
+    box-shadow: 0 10px 25px rgba(17, 24, 39, .06);
+
+}
+
+
+.desktop-navigation a:hover > svg:last-child {
+
+    color: var(--primary);
+
+    transform: translate(3px, -3px);
+
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 767px) {
+
+    .site-header {
+
+        display: none;
+
+    }
+
+}
+
+/* ==========================================================
+   MOBILE HEADER
+========================================================== */
+
+.mobile-header {
+    display: none;
+}
+
+
+/* ==========================================================
+   MOBILE HEADER — MOBILE ONLY
+========================================================== */
+
+@media (max-width: 767px) {
+
+    /* Keep the header itself visible */
+    .site-header {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 68px;
+
+        background: rgba(255, 255, 255, .82);
+
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+
+        border-bottom: 1px solid rgba(17, 24, 39, .07);
+
+        z-index: 1000;
+    }
+
+
+    /* Hide desktop components ONLY on mobile */
+    .site-header .header-inner,
+    .site-header .header-navigation {
+        display: none;
+    }
+
+
+    /* ======================================================
+       MOBILE HEADER CONTAINER
+    ====================================================== */
+
+    .mobile-header {
+
+        width: min(
+            calc(100% - 24px),
+            700px
+        );
+
+        height: 68px;
+
+        margin: 0 auto;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+        gap: 10px;
+    }
+
+
+    /* ======================================================
+       MOBILE LOGO
+    ====================================================== */
+
+    .mobile-header-logo {
+
+        flex-shrink: 0;
+
+        text-decoration: none;
+
+        color: var(--dark);
+
+        font-family:
+            Georgia,
+            "Times New Roman",
+            serif;
+
+        font-size: 1.25rem;
+
+        font-weight: 700;
+
+        white-space: nowrap;
+    }
+
+
+    .mobile-header-logo span {
+
+        color: var(--primary);
+    }
+
+
+    /* ======================================================
+       MOBILE ACTIONS
+    ====================================================== */
+
+    .mobile-header-actions {
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: flex-end;
+
+        gap: 5px;
+
+        min-width: 0;
+    }
+
+
+    /* ======================================================
+       ICON BUTTONS
+    ====================================================== */
+
+    .mobile-header-icon {
+
+        width: 34px;
+
+        height: 34px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        flex-shrink: 0;
+
+        border: none;
+
+        background: transparent;
+
+        color: var(--dark);
+
+        padding: 0;
+
+        cursor: pointer;
+
+        border-radius: 50%;
+
+        transition: .25s ease;
+    }
+
+
+    .mobile-header-icon svg {
+
+        width: 18px;
+
+        height: 18px;
+
+        stroke-width: 1.9;
+    }
+
+
+    .mobile-header-icon:active {
+
+        background: rgba(255, 122, 0, .08);
+
+        color: var(--primary);
+
+        transform: scale(.92);
+    }
+
+
+    /* ======================================================
+       NOTIFICATION
+    ====================================================== */
+
+    .mobile-notification {
+
+        position: relative;
+    }
+
+
+    .mobile-notification-dot {
+
+        position: absolute;
+
+        top: 6px;
+
+        right: 5px;
+
+        width: 7px;
+
+        height: 7px;
+
+        border-radius: 50%;
+
+        background: var(--primary);
+
+        border: 2px solid #ffffff;
+    }
+
+
+    /* ======================================================
+       MOBILE PROFILE
+    ====================================================== */
+
+    .mobile-header-profile {
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 7px;
+
+        margin-left: 3px;
+
+        flex-shrink: 0;
+    }
+
+
+    .mobile-profile-text {
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 3px;
+
+        font-size: .72rem;
+
+        white-space: nowrap;
+    }
+
+
+    .mobile-profile-text span {
+
+        color: #64748b;
+    }
+
+
+    .mobile-profile-text strong {
+
+        color: var(--dark);
+
+        font-weight: 700;
+    }
+
+
+    /* ======================================================
+       MOBILE AVATAR
+    ====================================================== */
+
+    .mobile-header-avatar {
+
+        width: 36px;
+
+        height: 36px;
+
+        flex-shrink: 0;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        border-radius: 50%;
+
+        background: var(--gradient);
+
+        color: #ffffff;
+
+        font-size: .85rem;
+
+        font-weight: 700;
+
+        border: 2px solid rgba(255, 255, 255, .9);
+
+        box-shadow:
+            0 4px 12px rgba(109, 40, 217, .15);
+    }
+
+}

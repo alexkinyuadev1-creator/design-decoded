@@ -1,0 +1,134 @@
+/* FLOAT */
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-18px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/* BACKGROUND BLOBS */
+@keyframes blobMove{
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(40px,-30px);
+    }
+    50%{
+        transform: translate(0,-60px);
+    }
+    75%{
+        transform: translate(-40px,-20px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+/* SHAPE ROTATION */
+@keyframes rotateShape{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* PAGE FADE */
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/*====================================
+        SCROLL REVEAL
+====================================*/
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(70px);
+
+    transition:
+
+        opacity .9s ease,
+
+        transform .9s ease;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.reveal-left{
+
+    opacity:0;
+
+    transform:translateX(-70px);
+
+    transition:.9s ease;
+
+}
+
+.reveal-left.active{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+.reveal-right{
+
+    opacity:0;
+
+    transform:translateX(70px);
+
+    transition:.9s ease;
+
+}
+
+.reveal-right.active{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+.reveal-up{
+
+    opacity:0;
+
+    transform:translateY(70px);
+
+    transition:.9s ease;
+
+}
+
+.reveal-up.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}

@@ -1,0 +1,1163 @@
+/*==================================================
+        CASE STUDY PAGE
+==================================================*/
+
+
+/*==================================================
+        CASE STUDY HEADER
+==================================================*/
+
+.header {
+    position: relative;
+
+    width: 100%;
+
+    padding: 25px 0;
+
+    background: #ffffff;
+
+    z-index: 10;
+}
+
+.header > .btn2 {
+    margin-left: 5%;
+
+    width: 45px;
+    height: 45px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #111827;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.header > .btn2 svg {
+    width: 18px;
+    height: 18px;
+}
+
+.header > .btn2:hover {
+    background: #ff7a00;
+
+    border-color: #ff7a00;
+
+    color: #ffffff;
+
+    transform: translateX(-3px);
+}
+
+
+/*==================================================
+        CASE STUDY HERO
+==================================================*/
+
+.case-hero {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 45px 0 110px;
+
+    background:
+        radial-gradient(
+            circle at 0% 20%,
+            rgba(255, 122, 0, 0.10),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 100% 80%,
+            rgba(109, 40, 217, 0.09),
+            transparent 32%
+        ),
+        #ffffff;
+}
+
+.case-hero::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(17, 24, 39, 0.035) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(17, 24, 39, 0.035) 1px,
+            transparent 1px
+        );
+
+    background-size: 45px 45px;
+
+    opacity: 0.45;
+
+    pointer-events: none;
+}
+
+.case-hero .container {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/*--------------------------------------------------
+        HERO GRID
+--------------------------------------------------*/
+
+.case-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.95fr)
+        minmax(0, 1.05fr);
+
+    align-items: center;
+
+    gap: 75px;
+}
+
+
+/*--------------------------------------------------
+        HERO CONTENT
+--------------------------------------------------*/
+
+.case-content {
+    max-width: 620px;
+}
+
+.case-content h1 span{
+    color: var(--dark);
+}
+
+/*--------------------------------------------------
+        PROJECT BADGE
+--------------------------------------------------*/
+
+.project-badge {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 9px 16px;
+
+    margin-bottom: 25px;
+
+    border: 1px solid rgba(255, 122, 0, 0.16);
+
+    border-radius: 999px;
+
+    background: #fff6ed;
+
+    color: #ff7a00;
+
+    font-family: inherit;
+
+    font-size: 0.82rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.02em;
+}
+
+
+/*--------------------------------------------------
+        HERO TITLE
+--------------------------------------------------*/
+
+.case-content h1 {
+    max-width: 620px;
+
+    margin: 0 0 25px;
+
+    color: var(--primary);
+
+    font-size: clamp(3.4rem, 5vw, 5.5rem);
+
+    line-height: 1.02;
+
+    letter-spacing: -0.055em;
+
+    font-weight: 700;
+}
+
+
+/*--------------------------------------------------
+        HERO DESCRIPTION
+--------------------------------------------------*/
+
+.case-description {
+    max-width: 590px;
+
+    margin: 0;
+
+    color: #4b5563;
+
+    font-size: 1.05rem;
+
+    line-height: 1.85;
+}
+
+
+/*--------------------------------------------------
+        PROJECT META
+--------------------------------------------------*/
+
+.project-meta {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+
+    margin-top: 42px;
+}
+
+.meta-card {
+    min-height: 115px;
+
+    padding: 20px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.82);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.meta-card:hover {
+    transform: translateY(-3px);
+
+    border-color: rgba(255, 122, 0, 0.25);
+
+    box-shadow: 0 12px 30px rgba(17, 24, 39, 0.06);
+}
+
+.meta-card h4 {
+    margin: 0 0 8px;
+
+    color: var(--primary);
+
+    font-size: 0.72rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.1em;
+
+    font-weight: 600;
+}
+
+.meta-card p {
+    margin: 0;
+
+    color: var(--light gray);
+
+    font-size: 0.9rem;
+
+    line-height: 1.55;
+
+    font-weight: 500;
+}
+
+
+/*--------------------------------------------------
+        HERO IMAGE
+--------------------------------------------------*/
+
+.case-image {
+    position: relative;
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid rgba(17, 24, 39, 0.08);
+
+    border-radius: 28px;
+
+    background: rgba(255, 255, 255, 0.7);
+
+    box-shadow:
+        0 30px 70px rgba(17, 24, 39, 0.10);
+
+    overflow: hidden;
+}
+
+.case-image::before {
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    top: -120px;
+    right: -100px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 122, 0, 0.14);
+
+    filter: blur(50px);
+
+    pointer-events: none;
+}
+
+.case-image img {
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    max-height: 700px;
+
+    object-fit: contain;
+
+    border-radius: 20px;
+}
+
+
+/*==================================================
+        GENERAL CASE STUDY SECTION HEADERS
+==================================================*/
+
+.overview .section-header,
+.objectives .section-header {
+    max-width: 800px;
+
+    margin: 0 auto 65px;
+
+    text-align: center;
+}
+
+.overview .section-header .section-tag,
+.objectives .section-header .section-tag {
+    display: inline-flex;
+
+    margin-bottom: 20px;
+}
+
+.overview .section-header h2,
+.objectives .section-header h2 {
+    margin: 0 0 20px;
+
+    color: #111827;
+
+    font-size: clamp(2.5rem, 4vw, 4rem);
+
+    line-height: 1.08;
+
+    letter-spacing: -0.045em;
+}
+
+.overview .section-header h2 span,
+.objectives .section-header h2 span {
+    color: #ff7a00;
+}
+
+.overview .section-header > p,
+.objectives .section-header > p {
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    color: #4b5563;
+
+    font-size: 1rem;
+
+    line-height: 1.85;
+}
+
+
+/*==================================================
+        PROJECT OVERVIEW
+==================================================*/
+
+.overview {
+    padding: 50px 0;
+
+    background: #ffffff;
+}
+
+.overview-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.05fr)
+        minmax(0, 0.95fr);
+
+    align-items: center;
+
+    gap: 75px;
+}
+
+
+/*--------------------------------------------------
+        OVERVIEW IMAGE
+--------------------------------------------------*/
+
+.overview-image {
+    position: relative;
+
+    padding: 10px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 25px;
+
+    background: #ffffff;
+
+    overflow: hidden;
+
+    box-shadow: 0 25px 60px rgba(17, 24, 39, 0.07);
+}
+
+.overview-image img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    border-radius: 17px;
+
+    object-fit: cover;
+}
+
+
+/*--------------------------------------------------
+        OVERVIEW CONTENT
+--------------------------------------------------*/
+
+.overview-content {
+    max-width: 560px;
+}
+
+.overview-content h3 {
+    margin: 0 0 20px;
+
+    color: #111827;
+
+    font-size: clamp(2rem, 3vw, 2.8rem);
+
+    line-height: 1.1;
+
+    letter-spacing: -0.035em;
+}
+
+.overview-content span {
+    color: var(--primary);
+
+}
+
+.overview-content p {
+    margin: 0;
+
+    color: #4b5563;
+
+    font-size: 1rem;
+
+    line-height: 1.9;
+}
+
+
+/*==================================================
+        CHALLENGE SECTION
+==================================================*/
+
+.challenge {
+    padding: 100px 0;
+
+    background: #f9fafb;
+}
+
+.challenge-box {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.9fr)
+        minmax(0, 1.1fr);
+
+    gap: 75px;
+
+    align-items: center;
+
+    padding: 70px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 30px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 20px 60px rgba(17, 24, 39, 0.05);
+}
+
+
+/*--------------------------------------------------
+        CHALLENGE LEFT
+--------------------------------------------------*/
+
+.challenge-left {
+    max-width: 530px;
+}
+
+.challenge-left .section-tag {
+    display: inline-flex;
+
+    margin-bottom: 20px;
+}
+
+.challenge-left h2 {
+    margin: 0 0 22px;
+
+    color: #111827;
+
+    font-size: clamp(2.7rem, 4vw, 4rem);
+
+    line-height: 1.05;
+
+    letter-spacing: -0.045em;
+}
+
+.challenge-left h2 span {
+    display: block;
+
+    color: #ff7a00;
+}
+
+.challenge-left > p {
+    margin: 0;
+
+    color: #4b5563;
+
+    font-size: 1rem;
+
+    line-height: 1.85;
+}
+
+
+/*--------------------------------------------------
+        CHALLENGE CARDS
+--------------------------------------------------*/
+
+.challenge-right {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+}
+
+.challenge-card {
+    min-height: 155px;
+
+    padding: 25px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.challenge-card:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(255, 122, 0, 0.25);
+
+    box-shadow: 0 15px 35px rgba(17, 24, 39, 0.06);
+}
+
+.challenge-card h4 {
+    margin: 0 0 12px;
+
+    color: #ff7a00;
+
+    font-size: 0.8rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.09em;
+}
+
+.challenge-card p {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 1rem;
+
+    line-height: 1.5;
+
+    font-weight: 500;
+}
+
+
+/*==================================================
+        PROJECT OBJECTIVES
+==================================================*/
+
+.objectives {
+    padding: 90px 0;
+
+    background: #ffffff;
+}
+
+.objectives-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+
+/*--------------------------------------------------
+        OBJECTIVE CARD
+--------------------------------------------------*/
+
+.objective-card {
+    min-height: 330px;
+
+    padding: 30px 25px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 22px;
+
+    background: #ffffff;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.objective-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(255, 122, 0, 0.25);
+
+    box-shadow:
+        0 20px 45px rgba(17, 24, 39, 0.07);
+}
+
+
+/*--------------------------------------------------
+        OBJECTIVE ICON
+--------------------------------------------------*/
+
+.objective-card .section-tag {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 30px;
+
+    padding: 0;
+
+    border: 1px solid rgba(255, 122, 0, 0.16);
+
+    border-radius: 14px;
+
+    background: #fff6ed;
+
+    color: #ff7a00;
+}
+
+.objective-card .section-tag svg {
+    width: 21px;
+    height: 21px;
+}
+
+
+/*--------------------------------------------------
+        OBJECTIVE TEXT
+--------------------------------------------------*/
+
+.objective-card h3 {
+    margin: 0 0 15px;
+
+    color: #111827;
+
+    font-size: 1.25rem;
+
+    line-height: 1.3;
+}
+
+.objective-card p {
+    margin: 0;
+
+    color: #6b7280;
+
+    font-size: 0.92rem;
+
+    line-height: 1.8;
+}
+
+/*==================================================
+        CASE STUDY
+        TABLET
+==================================================*/
+
+@media (max-width: 1100px) {
+
+    /*----------------------------------------------
+            HERO
+    ----------------------------------------------*/
+
+    .case-grid {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 45px;
+    }
+
+    .case-content h1 {
+        font-size: clamp(3rem, 5vw, 4.5rem);
+    }
+
+    .project-meta {
+        gap: 10px;
+    }
+
+    .meta-card {
+        padding: 17px;
+    }
+
+
+    /*----------------------------------------------
+            OVERVIEW
+    ----------------------------------------------*/
+
+    .overview-grid {
+        gap: 45px;
+    }
+
+
+    /*----------------------------------------------
+            CHALLENGE
+    ----------------------------------------------*/
+
+    .challenge-box {
+        padding: 50px;
+
+        gap: 50px;
+    }
+
+
+    /*----------------------------------------------
+            OBJECTIVES
+    ----------------------------------------------*/
+
+    .objectives-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 18px;
+    }
+
+    .objective-card {
+        min-height: 280px;
+    }
+}
+
+/*==================================================
+        CASE STUDY
+        MOBILE
+==================================================*/
+
+@media (max-width: 768px) {
+
+    /*----------------------------------------------
+            HEADER
+    ----------------------------------------------*/
+
+    .header {
+        padding: 18px 0;
+    }
+
+    .header > .btn2 {
+        margin-left: 20px;
+
+        width: 42px;
+        height: 42px;
+    }
+
+
+    /*----------------------------------------------
+            HERO
+    ----------------------------------------------*/
+
+    .case-hero {
+        padding: 60px 0 75px;
+    }
+
+    .case-grid {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 45px;
+    }
+
+    .case-content {
+        max-width: 100%;
+
+        text-align: center;
+    }
+
+    .project-badge {
+        margin-bottom: 20px;
+    }
+
+    .case-content h1 {
+        max-width: 100%;
+
+        margin-bottom: 20px;
+
+        font-size: clamp(2.7rem, 11vw, 4rem);
+
+        line-height: 1.05;
+
+        letter-spacing: -0.045em;
+    }
+
+    .case-description {
+        max-width: 100%;
+
+        margin: 0 auto;
+
+        font-size: 0.95rem;
+
+        line-height: 1.8;
+    }
+
+
+    /*----------------------------------------------
+            PROJECT META
+    ----------------------------------------------*/
+
+    .project-meta {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 10px;
+
+        margin-top: 30px;
+
+        text-align: left;
+    }
+
+    .meta-card {
+        min-height: 105px;
+
+        padding: 16px;
+
+        border-radius: 15px;
+    }
+
+    .meta-card h4 {
+        font-size: 0.68rem;
+    }
+
+    .meta-card p {
+        font-size: 0.82rem;
+    }
+
+
+    /*----------------------------------------------
+            HERO IMAGE
+    ----------------------------------------------*/
+
+    .case-image {
+        width: 100%;
+
+        padding: 8px;
+
+        border-radius: 20px;
+    }
+
+    .case-image img {
+        border-radius: 14px;
+
+        max-height: none;
+    }
+
+
+    /*----------------------------------------------
+            GENERAL SECTION HEADERS
+    ----------------------------------------------*/
+
+    .overview .section-header,
+    .objectives .section-header {
+        margin-bottom: 45px;
+    }
+
+    .overview .section-header h2,
+    .objectives .section-header h2 {
+        font-size: clamp(2.3rem, 9vw, 3.2rem);
+
+        line-height: 1.08;
+    }
+
+    .overview .section-header > p,
+    .objectives .section-header > p {
+        font-size: 0.92rem;
+
+        line-height: 1.8;
+    }
+
+
+    /*----------------------------------------------
+            OVERVIEW
+    ----------------------------------------------*/
+
+    .overview {
+        padding: 80px 0;
+    }
+
+    .overview-grid {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 40px;
+    }
+
+    .overview-image {
+        width: 100%;
+
+        padding: 7px;
+
+        border-radius: 20px;
+    }
+
+    .overview-image img {
+        border-radius: 14px;
+    }
+
+    .overview-content {
+        max-width: 100%;
+
+        text-align: center;
+    }
+
+    .overview-content h3 {
+        font-size: 2rem;
+
+        line-height: 1.1;
+    }
+
+    .overview-content p {
+        font-size: 0.92rem;
+
+        line-height: 1.8;
+    }
+
+
+    /*----------------------------------------------
+            CHALLENGE
+    ----------------------------------------------*/
+
+    .challenge {
+        padding: 75px 0;
+    }
+
+    .challenge-box {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 40px;
+
+        padding: 35px 25px;
+
+        border-radius: 22px;
+    }
+
+    .challenge-left {
+        max-width: 100%;
+
+        text-align: center;
+    }
+
+    .challenge-left h2 {
+        font-size: clamp(2.4rem, 9vw, 3.2rem);
+    }
+
+    .challenge-left > p {
+        font-size: 0.92rem;
+
+        line-height: 1.8;
+    }
+
+    .challenge-right {
+        width: 100%;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 10px;
+    }
+
+    .challenge-card {
+        min-height: 135px;
+
+        padding: 20px;
+
+        border-radius: 15px;
+    }
+
+    .challenge-card h4 {
+        font-size: 0.7rem;
+    }
+
+    .challenge-card p {
+        font-size: 0.88rem;
+    }
+
+
+    /*----------------------------------------------
+            OBJECTIVES
+    ----------------------------------------------*/
+
+    .objectives {
+        padding: 80px 0;
+    }
+
+    .objectives-grid {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+    }
+
+    .objective-card {
+        min-height: auto;
+
+        padding: 25px;
+
+        border-radius: 18px;
+    }
+
+    .objective-card .section-tag {
+        margin-bottom: 22px;
+    }
+
+    .objective-card h3 {
+        font-size: 1.15rem;
+    }
+
+    .objective-card p {
+        font-size: 0.9rem;
+
+        line-height: 1.75;
+    }
+
+}
+
+/*==================================================
+        CASE STUDY
+        SMALL PHONES
+==================================================*/
+
+@media (max-width: 480px) {
+
+    .case-hero {
+        padding: 50px 0 65px;
+    }
+
+    .case-content h1 {
+        font-size: 2.55rem;
+    }
+
+    .case-description {
+        font-size: 0.9rem;
+    }
+
+    .project-meta {
+        grid-template-columns: 1fr;
+    }
+
+    .meta-card {
+        min-height: auto;
+
+        padding: 17px;
+    }
+
+
+    /*----------------------------------------------
+            OVERVIEW
+    ----------------------------------------------*/
+
+    .overview,
+    .objectives {
+        padding: 65px 0;
+    }
+
+    .overview-content h3 {
+        font-size: 1.8rem;
+    }
+
+
+    /*----------------------------------------------
+            CHALLENGE
+    ----------------------------------------------*/
+
+    .challenge {
+        padding: 65px 0;
+    }
+
+    .challenge-box {
+        padding: 30px 20px;
+    }
+
+    .challenge-right {
+        grid-template-columns: 1fr;
+    }
+
+    .challenge-card {
+        min-height: auto;
+    }
+
+
+    /*----------------------------------------------
+            OBJECTIVES
+    ----------------------------------------------*/
+
+    .objective-card {
+        padding: 23px;
+    }
+
+}
