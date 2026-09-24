@@ -100,7 +100,7 @@
 
     color: #64748b;
 
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--body-font);
 
     font-size: 1.05rem;
 
@@ -222,6 +222,9 @@
     line-height: 1.25;
 }
 
+.principle-card .text-decorate span {
+    color: var(--primary);
+}
 
 /* ==========================================================
    CARD DESCRIPTION
@@ -232,7 +235,7 @@
 
     color: #64748b;
 
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--body-font);
 
     font-size: 0.98rem;
 
@@ -822,6 +825,9 @@
     color: #0f172a;
 }
 
+.journey-content .text-decorate span {
+    color: var(--primary);
+}
 /* Card description */
 .journey-content p {
     margin: 0;
@@ -1707,6 +1713,11 @@
 }
 
 
+.featured-content .text-decorate span {
+    color: var(--primary);
+}
+
+
 /* Project category */
 
 .project-category {
@@ -1753,9 +1764,9 @@
 
     color: #4b5563;
 
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--body-font);
     font-size: 16px;
-    line-height: 1.8;
+    line-height: 1.9;
 }
 
 
@@ -2574,7 +2585,7 @@
 
     color: #111827;
 
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--body-font);
     font-size: 15px;
 
     line-height: 1.85;
@@ -2607,7 +2618,7 @@
 
     border-radius: 50%;
 
-    border: 3px solid var(--primary);
+    border: 3px solid var(--gray);
 
     box-shadow:
         0 3px 10px rgba(17, 24, 39, 0.12);
@@ -2615,8 +2626,8 @@
 }
 
 .testimonial-author .lucide {
-    stroke-width: 2;
-    color: var(--primary);
+    stroke-width: 1.5;
+    color: var(--gray);
 }
 
 /* Author information */
@@ -2628,7 +2639,7 @@
 .testimonial-author h4 {
     margin: 0 0 4px;
 
-    color: #111827;
+    color: var(--primary);
 
     font-family: "Space Grotesk", sans-serif;
     font-size: 14px;
@@ -2640,7 +2651,7 @@
 .testimonial-author span {
     display: block;
 
-    color: #374151;
+    color: var(--dark);
 
     font-family: Georgia, "Times New Roman", serif;
     font-size: 13px;
@@ -3107,7 +3118,7 @@
 
     color: #4b5563;
 
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--body-font);
 
     font-size: 14px;
     line-height: 1.8;
@@ -3510,7 +3521,7 @@
 
     color: #4b5563;
 
-    font-family: "Georgia", serif;
+    font-family: var(--body-font);
     font-size: 15px;
     line-height: 1.8;
 }
@@ -3798,6 +3809,8 @@
 
     line-height:1.3;
 
+    color: var(--primary);
+
 }
 
 .offer-card p{
@@ -3807,6 +3820,8 @@
     color:#64748b;
 
     line-height:1.75;
+
+    font-family: var(--body-font);
 
 }
 
@@ -3849,7 +3864,7 @@
 
 .offer-link:hover{
 
-    color:var(--primary);
+    color:var(--secondary);
 
 }
 
@@ -4557,6 +4572,22 @@ a{
         border-color 0.3s ease;
 }
 
+.why-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 20px 45px rgba(17, 24, 39, 0.08);
+}
+
+.why-card:hover .why-icon {
+    transform: rotate(-6deg) scale(1.06);
+
+    background: var(--gradient);
+
+}
+
+.why-card:hover .why-icon .lucide {
+    color: #ffffff;
+}
+
 
 /* =========================================================
    WHY ICON
@@ -4602,6 +4633,9 @@ a{
     color: #0f172a;
 }
 
+.why-card .text-decorate span {
+    color: var(--primary);
+}
 
 /* =========================================================
    CARD DESCRIPTION
@@ -4612,7 +4646,7 @@ a{
 
     max-width: 520px;
 
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--body-font);
     font-size: 16px;
     line-height: 1.8;
 
@@ -4968,6 +5002,8 @@ a{
 
     font-size:1.05rem;
 
+    font-family: var(--body-font);
+
 }
 
 
@@ -5011,9 +5047,9 @@ a{
 
     position:relative;
 
-    width:170px;
+    width:250px;
 
-    height:170px;
+    height:250px;
 
     display:flex;
 
@@ -5038,11 +5074,13 @@ a{
 }
 
 
+
+
 .services-final-cta__shape .lucide{
 
-    width:70px;
+    width:150px;
 
-    height:70px;
+    height:150px;
 
     stroke-width:1.4;
 
@@ -5066,13 +5104,13 @@ a{
 
 .services-final-cta__orb.orb-one{
 
-    width:220px;
+    width:320px;
 
-    height:220px;
+    height:320px;
 
-    top:20px;
+    top:190px;
 
-    right:20px;
+    right:250px;
 
     background:rgba(255,122,0,.13);
 
@@ -5081,13 +5119,13 @@ a{
 
 .services-final-cta__orb.orb-two{
 
-    width:180px;
+    width:280px;
 
-    height:180px;
+    height:280px;
 
-    bottom:10px;
+    bottom:220px;
 
-    left:20px;
+    left:150px;
 
     background:rgba(109,40,217,.12);
 
@@ -5117,18 +5155,18 @@ a{
 
 .services-final-cta__dot.dot-one{
 
-    top:55px;
+    top:15px;
 
-    left:25%;
+    left:-15%;
 
 }
 
 
 .services-final-cta__dot.dot-two{
 
-    right:12%;
+    right:8%;
 
-    bottom:80px;
+    bottom:10px;
 
     background:#6d28d9;
 
@@ -5139,13 +5177,13 @@ a{
 
     left:15%;
 
-    bottom:45px;
+    bottom:-15px;
 
     width:8px;
 
     height:8px;
 
-    background:#6d28d9;
+    background:#ff7a00;
 
 }
 
@@ -5279,9 +5317,9 @@ a{
 
     .services-final-cta__shape{
 
-        width:125px;
+        width:195px;
 
-        height:125px;
+        height:195px;
 
         border-radius:32px;
 
@@ -5290,33 +5328,33 @@ a{
 
     .services-final-cta__shape .lucide{
 
-        width:50px;
+        width:100px;
 
-        height:50px;
+        height:100px;
 
     }
 
 
     .services-final-cta__orb.orb-one{
 
-        width:150px;
+        width:220px;
 
-        height:150px;
+        height:220px;
 
-        top:10px;
+        top:40px;
 
-        right:15px;
+        right:-10px;
 
     }
 
 
     .services-final-cta__orb.orb-two{
 
-        width:130px;
+        width:180px;
 
-        height:130px;
+        height:180px;
 
-        bottom:5px;
+        bottom:50px;
 
         left:15px;
 
@@ -5478,3 +5516,993 @@ a{
     }
 
 }
+
+/* =========================================================
+   EXPERTISE / WHAT I DO / LEARNING & BUILDING
+   Visual direction based on the provided Core Principles section
+========================================================= */
+
+.expertise-section {
+    position: relative;
+    padding: 50px 0;
+    background: #f8f9fb;
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.expertise-header {
+    width: min(760px, 90%);
+    margin: 0 auto var(--space-lg);
+    text-align: center;
+}
+
+
+/* Small pill label */
+
+.section-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 8px 18px;
+    margin-bottom: 26px;
+
+    border: 1px solid rgba(255, 122, 0, 0.22);
+    border-radius: 999px;
+
+    background: rgba(255, 122, 0, 0.04);
+
+    color: var(--primary);
+
+    font-family: var(--body-font);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.section-label svg {
+    width: 15px;
+    height: 15px;
+    stroke-width: 2;
+}
+
+
+/* Main heading */
+
+.expertise-header h2 {
+    max-width: 720px;
+    margin: 0 auto 22px;
+
+    font-family: var(--heading-font);
+    font-size: clamp(2rem, 4.5vw, 3.7rem);
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+
+    color: var(--dark);
+}
+
+.expertise-header h2 span {
+    color: var(--primary);
+}
+
+
+/* Header paragraph */
+
+.expertise-header > p {
+    max-width: 660px;
+    margin: 0 auto;
+
+    font-family: var(--body-font);
+    font-size: var(--fs-sm);
+    line-height: 1.8;
+
+    color: var(--gray);
+}
+
+
+/* Decorative gradient line */
+
+.expertise-header::after {
+    content: "";
+    display: block;
+
+    width: 78px;
+    height: 4px;
+
+    margin: 34px auto 0;
+
+    border-radius: 999px;
+
+    background: var(--gradient);
+}
+
+
+/* =========================================================
+   PRIMARY / WHAT I DO CARD
+========================================================= */
+
+.primary-expertise {
+    position: relative;
+
+    width: min(1100px, 90%);
+    margin: 0 auto var(--space-xl);
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 30px;
+    align-items: flex-start;
+
+    padding: 42px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 24px;
+
+    box-shadow: var(--shadow-small);
+
+    overflow: hidden;
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition);
+}
+
+
+/* Subtle corner decoration */
+
+.primary-expertise::after {
+    content: "";
+
+    position: absolute;
+    top: -75px;
+    right: -75px;
+
+    width: 170px;
+    height: 170px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        rgba(255, 122, 0, 0.08),
+        rgba(109, 40, 217, 0.05)
+    );
+
+    pointer-events: none;
+}
+
+.primary-expertise:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(255, 122, 0, 0.25);
+
+    box-shadow: var(--shadow-medium);
+}
+
+
+/* Main icon */
+
+.primary-expertise__icon {
+    position: relative;
+    z-index: 1;
+
+    width: 66px;
+    height: 66px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 17px;
+
+    color: var(--primary);
+
+    background: rgba(255, 122, 0, 0.08);
+}
+
+.primary-expertise__icon svg {
+    width: 30px;
+    height: 30px;
+    stroke-width: 2;
+}
+
+
+/* Content */
+
+.primary-expertise__content {
+    position: relative;
+    z-index: 1;
+}
+
+.primary-expertise__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+
+    margin-bottom: 18px;
+}
+
+
+/* Small heading above title */
+
+.expertise-kicker {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: var(--primary);
+
+    font-family: var(--body-font);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+
+/* Main expertise title */
+
+.primary-expertise h3 {
+    margin: 0;
+
+    font-family: var(--heading-font);
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 700;
+    line-height: 1.2;
+
+    color: var(--primary);
+}
+
+
+/* Description */
+
+.primary-expertise p {
+    max-width: 780px;
+
+    margin: 0 0 28px;
+
+    color: var(--gray);
+
+    font-family: var(--body-font);
+    font-size: var(--fs-sm);
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   PROFESSIONAL STATUS BADGE
+========================================================= */
+
+.expertise-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    padding: 7px 13px;
+
+    border-radius: 999px;
+
+    font-family: var(--body-font);
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.expertise-status--professional {
+    color: var(--primary);
+
+    background: rgba(255, 122, 0, 0.07);
+
+    border: 1px solid rgba(255, 122, 0, 0.18);
+}
+
+
+/* =========================================================
+   PRIMARY SERVICE TAGS
+========================================================= */
+
+.primary-expertise__services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.primary-expertise__services span {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 8px 12px;
+
+    border: 1px solid var(--border);
+    border-radius: 9px;
+
+    background: #fafafa;
+
+    color: var(--dark-light);
+
+    font-family: var(--body-font);
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+.primary-expertise__services svg {
+    width: 14px;
+    height: 14px;
+
+    color: var(--primary);
+
+    stroke-width: 2.5;
+}
+
+
+/* =========================================================
+   LEARNING SECTION
+========================================================= */
+
+.learning-section {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+}
+
+
+/* Learning intro */
+
+.learning-section__header {
+    width: min(760px, 100%);
+
+    margin: 0 auto 48px;
+
+    text-align: center;
+}
+
+.learning-section__header .expertise-kicker {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 18px;
+    margin-bottom: 24px;
+
+    border: 1px solid rgba(109, 40, 217, 0.16);
+    border-radius: 999px;
+
+    background: rgba(109, 40, 217, 0.04);
+
+    color: var(--secondary);
+}
+
+.learning-section__header h3 {
+    max-width: 650px;
+    margin: 0 auto 18px;
+
+    font-family: var(--heading-font);
+    font-size: clamp(1.9rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+
+    color: var(--dark);
+}
+
+.learning-section__header span {
+    color: var(--primary);
+}
+
+
+.learning-section__header p {
+    max-width: 660px;
+
+    margin: 0 auto;
+
+    color: var(--gray);
+
+    font-family: var(--body-font);
+    font-size: var(--fs-sm);
+    line-height: 1.8;
+}
+
+
+/* Small separator */
+
+.learning-section__header::after {
+    content: "";
+
+    display: block;
+
+    width: 68px;
+    height: 4px;
+
+    margin: 30px auto 0;
+
+    border-radius: 999px;
+
+    background: var(--gradient);
+}
+
+
+/* =========================================================
+   LEARNING GRID
+========================================================= */
+
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+
+/* =========================================================
+   LEARNING CARDS
+========================================================= */
+
+.learning-card {
+    position: relative;
+
+    min-height: 330px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 22px;
+
+    box-shadow: var(--shadow-small);
+
+    overflow: hidden;
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition);
+}
+
+.learning-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(255, 122, 0, 0.2);
+
+    box-shadow: var(--shadow-medium);
+}
+
+
+/* Slight asymmetric decorative shape */
+
+.learning-card::after {
+    content: "";
+
+    position: absolute;
+
+    right: -35px;
+    bottom: -35px;
+
+    width: 95px;
+    height: 95px;
+
+    border-radius: 50%;
+
+    background: rgba(109, 40, 217, 0.035);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   CARD TOP
+========================================================= */
+
+.learning-card__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+
+    margin-bottom: 28px;
+}
+
+
+/* =========================================================
+   LEARNING CARD ICONS
+========================================================= */
+
+.learning-card__icon {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 16px;
+
+    color: var(--primary);
+
+    background: rgba(255, 122, 0, 0.08);
+}
+
+.learning-card__icon svg {
+    width: 27px;
+    height: 27px;
+
+    stroke-width: 2;
+}
+
+
+/* Web Development */
+
+.learning-card__icon--web {
+    color: var(--primary);
+    background: rgba(255, 122, 0, 0.08);
+}
+
+
+/* AI */
+
+.learning-card__icon--ai {
+    color: var(--primary);
+    background: rgba(255, 122, 0, 0.08);
+}
+
+
+/* UI / UX */
+
+.learning-card__icon--ui {
+    color: var(--primary);
+
+    background: rgba(255, 122, 0, 0.08);
+}
+
+
+/* =========================================================
+   LEARNING STATUS
+========================================================= */
+
+.learning-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 7px 11px;
+
+    border: 1px solid rgba(109, 40, 217, 0.12);
+    border-radius: 999px;
+
+    background: rgba(109, 40, 217, 0.04);
+
+    color: var(--secondary);
+
+    font-family: var(--body-font);
+    font-size: 0.66rem;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   LEARNING CARD TYPOGRAPHY
+========================================================= */
+
+.learning-card h4 {
+    margin: 0 0 13px;
+
+    font-family: var(--heading-font);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.2;
+
+    color: var(--primary);
+}
+
+.learning-card p {
+    margin: 0 0 28px;
+
+    color: var(--gray);
+
+    font-family: var(--body-font);
+    font-size: 0.92rem;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   SKILL TAGS
+========================================================= */
+
+.learning-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-top: auto;
+
+    position: relative;
+    z-index: 1;
+}
+
+.learning-tags span {
+    padding: 7px 10px;
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    background: #fafafa;
+
+    color: var(--gray);
+
+    font-family: var(--body-font);
+    font-size: 0.7rem;
+    font-weight: 600;
+
+    transition:
+        color var(--transition),
+        border-color var(--transition),
+        background var(--transition);
+}
+
+.learning-tags span:hover {
+    color: var(--primary);
+
+    border-color: rgba(255, 122, 0, 0.22);
+
+    background: rgba(255, 122, 0, 0.04);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .expertise-section {
+        padding: 100px 0;
+    }
+
+    .learning-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .expertise-section {
+        padding: 75px 0;
+    }
+
+
+    /* Header */
+
+    .expertise-header {
+        width: 88%;
+        margin-bottom: 48px;
+    }
+
+    .section-label {
+        margin-bottom: 22px;
+    }
+
+    .expertise-header h2 {
+        font-size: clamp(2rem, 9vw, 2.7rem);
+    }
+
+    .expertise-header > p {
+        font-size: 0.95rem;
+        line-height: 1.75;
+    }
+
+
+    /* Primary card */
+
+    .primary-expertise {
+        width: 84%;
+
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+
+        padding: 28px;
+
+        margin-bottom: 80px;
+
+        border-radius: 22px;
+    }
+
+    .primary-expertise__icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .primary-expertise__top {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .primary-expertise h3 {
+        font-size: 1.55rem;
+    }
+
+    .primary-expertise p {
+        font-size: 0.93rem;
+    }
+
+
+    /* Learning intro */
+
+    .learning-section {
+        width: 100%;
+    }
+
+    .learning-section__header {
+        width: 88%;
+        margin-bottom: 42px;
+    }
+
+    .learning-section__header h3 {
+        font-size: clamp(1.8rem, 8vw, 2.4rem);
+    }
+
+    .learning-section__header p {
+        font-size: 0.94rem;
+    }
+
+
+    /* Cards */
+
+    .learning-grid {
+        width: 84%;
+        margin: 0 auto;
+
+        grid-template-columns: 1fr;
+
+        gap: 24px;
+    }
+
+    .learning-card {
+        min-height: 0;
+
+        padding: 28px;
+
+        border-radius: 22px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .expertise-section {
+        padding: 65px 0;
+    }
+
+    .expertise-header {
+        width: 90%;
+    }
+
+    .expertise-header h2 {
+        font-size: 2.05rem;
+    }
+
+    .expertise-header::after {
+        margin-top: 28px;
+    }
+
+
+    /* Main card */
+
+    .primary-expertise {
+        width: calc(100% - 40px);
+
+        padding: 26px;
+
+        margin-bottom: 70px;
+    }
+
+    .primary-expertise__services {
+        gap: 8px;
+    }
+
+    .primary-expertise__services span {
+        font-size: 0.72rem;
+    }
+
+
+    /* Learning */
+
+    .learning-section__header {
+        width: calc(100% - 40px);
+    }
+
+    .learning-grid {
+        width: calc(100% - 40px);
+
+        gap: 22px;
+    }
+
+    .learning-card {
+        padding: 26px;
+    }
+
+    .learning-card__top {
+        margin-bottom: 24px;
+    }
+
+    .learning-card h4 {
+        font-size: 1.35rem;
+    }
+
+    .learning-status {
+        font-size: 0.62rem;
+    }
+
+}
+
+/* =========================================================
+   ANIMATED GLOWING CORNERS
+========================================================= */
+
+.animated-card {
+    position: relative;
+    isolation: isolate;
+}
+
+/* =========================================================
+   ROTATING GLOWING BORDER
+========================================================= */
+
+.animated-card {
+    position: relative;
+    isolation: isolate;
+
+    /* Prevent the rotating glow from being clipped */
+    overflow: visible;
+}
+
+
+/* =========================================================
+   ROTATING GLOW AROUND CARD BORDER
+========================================================= */
+
+/*
+   The custom property controls ONLY the angle of the
+   conic-gradient. The card itself never rotates.
+*/
+@property --glow-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+
+.animated-card {
+    position: relative;
+    isolation: isolate;
+    overflow: visible;
+}
+
+
+/* =========================================================
+   GLOWING BORDER
+========================================================= */
+
+.animated-card::before {
+    content: "";
+
+    position: absolute;
+
+    inset: -2px;
+
+    border-radius: inherit;
+
+    padding: 2px;
+
+    /*
+       The gradient rotates while the actual border shape
+       remains completely stationary.
+    */
+    background: conic-gradient(
+        from var(--glow-angle),
+
+        transparent 0deg,
+        transparent 35deg,
+
+        rgba(255, 122, 0, 0.15) 55deg,
+        var(--primary) 75deg,
+        rgba(255, 122, 0, 0.85) 90deg,
+
+        transparent 115deg,
+        transparent 180deg,
+
+        transparent 215deg,
+
+        rgba(109, 40, 217, 0.15) 235deg,
+        var(--secondary) 255deg,
+        rgba(109, 40, 217, 0.85) 275deg,
+
+        transparent 300deg,
+        transparent 360deg
+    );
+
+    /*
+       Cut out the middle so only the perimeter glow
+       remains visible.
+    */
+    -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+
+    -webkit-mask-composite: xor;
+
+    mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+
+    mask-composite: exclude;
+
+    pointer-events: none;
+
+    z-index: 3;
+
+    /*
+       ONLY the gradient angle changes.
+       The card does NOT rotate.
+    */
+    animation: rotateBorderGlow 7s linear infinite;
+
+    filter:
+        drop-shadow(
+            0 0 4px rgba(255, 122, 0, 0.35)
+        )
+        drop-shadow(
+            0 0 8px rgba(109, 40, 217, 0.22)
+        );
+}
+
+
+/* =========================================================
+   GRADIENT ROTATION
+========================================================= */
+
+@keyframes rotateBorderGlow {
+
+    from {
+        --glow-angle: 0deg;
+    }
+
+    to {
+        --glow-angle: 360deg;
+    }
+
+}
+

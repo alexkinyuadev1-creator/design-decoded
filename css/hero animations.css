@@ -132,3 +132,106 @@
     transform:translateY(0);
 
 }
+
+/* ========================================
+   SERVICES CTA VISUAL ANIMATIONS
+======================================== */
+
+/* Large gradient orbs */
+.services-final-cta__orb.orb-one {
+    animation: floatOrbOne 6s ease-in-out infinite;
+}
+
+.services-final-cta__orb.orb-two {
+    animation: floatOrbTwo 7s ease-in-out infinite;
+}
+
+
+/* Main pen-tool shape */
+.services-final-cta__shape {
+    animation: floatShape 5s ease-in-out infinite;
+}
+
+
+/* Decorative dots */
+.services-final-cta__dot.dot-one {
+    animation: floatDotOne 4s ease-in-out infinite;
+}
+
+.services-final-cta__dot.dot-two {
+    animation: floatDotTwo 5s ease-in-out infinite;
+}
+
+.services-final-cta__dot.dot-three {
+    animation: floatDotThree 4.5s ease-in-out infinite;
+}
+
+
+/* ========================================
+   KEYFRAMES
+======================================== */
+
+@keyframes floatOrbOne {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(15px, -20px);
+    }
+}
+
+
+@keyframes floatOrbTwo {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-18px, 15px);
+    }
+}
+
+
+@keyframes floatShape {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-12px) rotate(4deg);
+    }
+}
+
+
+@keyframes floatDotOne {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+@keyframes floatDotTwo {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(8px, -7px);
+    }
+}
+
+
+@keyframes floatDotThree {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-7px, 9px);
+    }
+}

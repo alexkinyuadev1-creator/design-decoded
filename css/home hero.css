@@ -911,12 +911,13 @@
     object-fit: cover;
     object-position: center;
 
-    border: 6px solid #17233d;
+    border: 6px solid var(--gradient);
     border-radius: 42px;
 
     box-sizing: border-box;
 
     margin-top: -200px;
+
 }
 
 
@@ -933,7 +934,7 @@
      * Card overlaps the bottom-left portion
      * of the portrait.
      */
-    left: clamp(-45px, -5vw, -20px);
+    left: clamp(-45px, -50vw, -20px);
     bottom: clamp(-60px, -7vw, -45px);
 
     width: clamp(270px, 62%, 315px);
@@ -1102,10 +1103,10 @@
     }
 
     .profile-card {
-        left: -35px;
+        left: -75px;
         bottom: -65px;
 
-        width: 315px;
+        width: 290px;
         padding: 32px;
     }
 }
