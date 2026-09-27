@@ -8,24 +8,156 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>Project Case Study | Design Decoded</title>
+    <title>Project Case Study | Business card design</title>
 
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="/css/case-study.css">
 
     <!-- REL ICON-->
-     <link rel="icon" type="image/png" href="/assets/logos/favicon.ico">
-
+     <link rel="icon" type="image/png" sizes="512x512" href="/Assets/icons/design-decoded-favicon.png">
 </head>
 
 <body>
 
-    <!-- Header -->
+    <!-- ==========================================================
+     DESKTOP HEADER
+========================================================== -->
 
-    <header class="header">
-        <a href="index.html" class="btn2 btn-secondary2">
-                  <i data-lucide="arrow-left"></i>
-                </a>
-    </header>
+<header class="site-header">
+
+    <!-- ==========================================================
+     MOBILE HEADER
+========================================================== -->
+
+  <div class="mobile-header">
+
+    <!-- LOGO -->
+    <a href="index.html" class="mobile-header-logo">
+        Design <span>Decoded</span>
+    </a>
+
+    <!-- ACTIONS -->
+    <div class="mobile-header-actions">
+
+        <!-- SEARCH -->
+        <button
+            class="mobile-header-icon"
+            aria-label="user"
+        >
+            <i data-lucide="circle-user-round"></i>
+        </button>
+
+        <!-- MESSAGE -->
+        <button
+            class="mobile-header-icon"
+            aria-label="gem"
+        >
+            <i data-lucide="gem"></i>
+        </button>
+
+        <!-- NOTIFICATIONS -->
+        <button
+            class="mobile-header-icon mobile-notification"
+            aria-label="Notifications"
+        >
+            <i data-lucide="bell"></i>
+
+            <span class="mobile-notification-dot"></span>
+        </button>
+
+        <!-- PROFILE -->
+        <div class="mobile-header-profile">
+
+            <div class="mobile-profile-text">
+                <span><strong>Hello</strong></span>
+            </div>
+
+            <div class="mobile-header-avatar">
+                <i data-lucide="hand"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+  </div>
+
+    <div class="header-inner">
+
+        <!-- BRAND -->
+        <div class="header-left">
+
+            <a href="index.html" class="header-logo">
+                Design <span>Decoded</span>
+            </a>
+
+
+            <!-- MENU TOGGLE -->
+            <button
+                class="header-menu-toggle"
+                id="headerMenuToggle"
+                aria-label="Open navigation"
+                aria-expanded="false"
+            >
+                <i data-lucide="menu"></i>
+            </button>
+
+
+            <!-- SEARCH -->
+            <button
+                class="header-icon-btn"
+                aria-label="user"
+            >
+                <i data-lucide="circle-user-round"></i>
+            </button>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+        <div class="header-right">
+
+            <!-- MESSAGE -->
+            <button
+                class="header-icon-btn"
+                aria-label="gem"
+            >
+                <i data-lucide="gem"></i>
+            </button>
+
+
+            <!-- NOTIFICATIONS -->
+            <button
+                class="header-icon-btn notification-btn"
+                aria-label="Notifications"
+            >
+                <i data-lucide="bell"></i>
+
+                <span class="notification-dot"></span>
+            </button>
+
+
+            <!-- PROFILE -->
+            <div class="header-profile">
+
+                <div class="header-profile-text">
+
+                    <span><strong>Welcome</strong></span>
+
+                </div>
+
+
+                <div class="header-avatar">
+                    <i data-lucide="hand"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</header>
 
     <!-- Hero -->
        <section class="case-hero">
@@ -412,6 +544,15 @@ to access.
   <!--Lucide Icons-->
   <script src="https://unpkg.com/lucide@latest"></script>
   <script src="../js/script.js"></script>
+  <!-- Navigation -->
+<script src="js/navigation.js"></script>
+
+<!-- Header js-->
+     <script src="js/header.js"></script>
+
+<!-- Reveal js-->
+<script src="js/reveal.js"></script>
+
 
 </body>
 
