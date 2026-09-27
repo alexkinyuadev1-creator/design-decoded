@@ -733,13 +733,13 @@
 
     .mobile-profile-text span {
 
-        color: #64748b;
+        color: var(--primary);
     }
 
 
     .mobile-profile-text strong {
 
-        color: var(--dark);
+        color: var(--primary);
 
         font-weight: 700;
     }
