@@ -6040,3 +6040,49 @@ a{
 
 }
 
+/* =========================================
+   HEADER — TABLET
+   ========================================= */
+
+@media (max-width: 1024px) {
+
+    .desktop-navigation {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   HEADER — SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .mobile-profile-text {
+        display: none;
+    }
+
+    .mobile-header-actions {
+        gap: 3px;
+    }
+
+}
+
+
+/* =========================================
+   HEADER — VERY SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 380px) {
+
+    .mobile-header-logo {
+        font-size: 1.15rem;
+    }
+
+    .mobile-header-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+}

@@ -748,7 +748,7 @@
 
 .portrait-wrapper:hover .profile-image{
 
-    transform: transalateY(-6px);
+    transform: translateY(-6px);
 
 }
 
