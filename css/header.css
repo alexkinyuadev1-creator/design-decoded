@@ -462,13 +462,13 @@
 
     transform: translateY(-3px);
 
-    border-color: rgba(255, 122, 0, .25);
+    border-color: var(--primary);
 
     background:
         linear-gradient(
             135deg,
-            rgba(255,122,0,.06),
-            rgba(109,40,217,.05)
+            rgba(60, 255, 0, 0.06),
+            rgba(40, 217, 49, 0.05)
         );
 
     box-shadow: 0 10px 25px rgba(17, 24, 39, .06);
