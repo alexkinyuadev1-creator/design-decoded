@@ -1832,6 +1832,10 @@
 
     border-radius: 15px;
 
+    background: var(--primary);
+
+    color: var(--secondary);
+
 }
 
 .featured-content .btn svg {
@@ -1843,13 +1847,16 @@
 
 .featured-content .btn:hover svg {
     transform: translate(3px, -3px);
-    color: var(--primary);
+    color: var(--secondary);
 }
 
 .featured-content .btn:hover span {
-    color: var(--primary);
+    color: var(--secondary);
 }
 
+.featured-content .btn:hover {
+    box-shadow: var(--primary);
+}
 
 /* ==========================================
    FEATURED PROJECT — TABLET
@@ -3626,6 +3633,10 @@
     border-radius: 15px;
     color: var(--secondary);
     padding: 20px 50px;
+}
+
+.archive-left .btn:hover{
+    box-shadow: var(--primary);
 }
 
 a{
