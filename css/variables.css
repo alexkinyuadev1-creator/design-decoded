@@ -1,20 +1,20 @@
 :root{
 
-    --primary:#FF7A00;
-    --secondary:#6D28D9;
+    --primary:#A3E635;
+    --secondary:#0F172A;
 
-    --gradient:linear-gradient(135deg,#FF7A00,#6D28D9);
+    --gradient:linear-gradient(135deg,#A3E635,#0f172a);
 
-    --dark:#111827;
-    --dark-light:#1F2937;
+    --dark:#0f172a;
+    --dark-light:#0f172a;
 
-    --white:#FFFFFF;
+    --white:#f8fafc;
 
     --light:#F3F4F6;
 
-    --gray:#6B7280;
+    --gray:#64748b;
 
-    --border:#E5E7EB;
+    --border:#64748b;
 
     --heading-font:'Space Grotesk',sans-serif;
     --body-font:'Inter',sans-serif;
