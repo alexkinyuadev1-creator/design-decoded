@@ -192,6 +192,9 @@
 
 }
 
+.home-hero-content .section-tag {
+    background: var(--secondary);
+}
 
 /*==================================================
         HERO BUTTONS
@@ -969,7 +972,7 @@
 
     margin-bottom: 20px;
 
-    background: #ff7a00;
+    background: var(--secondary);
 
     border-radius: 50%;
 }
@@ -981,7 +984,7 @@
     width: clamp(22px, 3vw, 28px);
     height: clamp(22px, 3vw, 28px);
 
-    color: #ffffff;
+    color: var(--primary);
 
     stroke-width: 2;
 }
@@ -1072,7 +1075,7 @@
     width: 18px;
     height: 18px;
 
-    color: #ff7a00;
+    color: var(--primary);
 
     stroke-width: 1.8;
 }

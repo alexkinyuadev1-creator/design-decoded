@@ -2869,7 +2869,7 @@
 
 .faq {
     padding: 70px 0;
-    background: #ffffff;
+    background: var(--secondary);
 }
 
 /*------------------------------------
@@ -2894,11 +2894,11 @@
 
     margin-bottom: 22px;
 
-    background: #fff4e9;
-    border: 1px solid #ffd9b5;
+    background: var(--primary);
+    border: 1px solid var(--primary);
     border-radius: 999px;
 
-    color: #ff6f00;
+    color: var(--secondary);
 
     font-family: "Space Grotesk", sans-serif;
     font-size: 14px;
@@ -2918,7 +2918,7 @@
 .faq .section-header h2 {
     margin: 0;
 
-    color: #111827;
+    color: var(--white);
 
     font-family: "Space Grotesk", sans-serif;
     font-size: clamp(42px, 5vw, 64px);
@@ -2928,7 +2928,7 @@
 }
 
 .faq .section-header h2 span {
-    color: #ff6f00;
+    color: var(--primary);
 }
 
 /* Description */
@@ -2938,7 +2938,7 @@
 
     margin: 22px auto 0;
 
-    color: #374151;
+    color: var(--white);
 
     font-family: "Georgia", serif;
     font-size: 16px;
@@ -2965,9 +2965,9 @@
 -------------------------------------*/
 
 .faq-item {
-    background: #ffffff;
+    background: var(--secondary);
 
-    border: 1px solid #e5e7eb;
+    border: 2px solid var(--gray);
     border-radius: 18px;
 
     overflow: hidden;
@@ -2979,9 +2979,9 @@
 }
 
 .faq-item:hover {
-    border-color: #ffd2a8;
+    border-color: var(--primary);
 
-    box-shadow: 0 12px 30px rgba(17, 24, 39, 0.06);
+    box-shadow: 0 12px 30px rgba(63, 241, 71, 0.06);
 }
 
 
@@ -3007,7 +3007,7 @@
 
     text-align: left;
 
-    color: #111827;
+    color: var(--primary);
 
     font-family: "Space Grotesk", sans-serif;
     font-size: 16px;
@@ -3017,7 +3017,7 @@
 }
 
 .faq-question:hover {
-    color: #ff6f00;
+    color: var(--white);
 }
 
 .faq-question span {
@@ -3033,7 +3033,7 @@
     width: 19px;
     height: 19px;
 
-    color: #ff6f00;
+    color: var(--primary);
 
     stroke-width: 2;
 
@@ -3062,7 +3062,7 @@
 
     padding-bottom: 25px;
 
-    color: #4b5563;
+    color: var(--gray);
 
     font-family: var(--body-font);
     font-size: 15px;
@@ -3080,13 +3080,13 @@
 */
 
 .faq-item.active {
-    border-color: #ffd2a8;
+    border-color: var(--primary);
 
-    box-shadow: 0 12px 30px rgba(255, 111, 0, 0.07);
+    box-shadow: 0 12px 30px rgba(131, 250, 95, 0.07);
 }
 
 .faq-item.active .faq-question {
-    color: #ff6f00;
+    color: var(--white);
 }
 
 .faq-item.active .faq-question i {
@@ -3107,7 +3107,7 @@
 
     position:relative;
 
-    padding: 90px 0;
+    padding: 60px 0;
 
     background: var(--secondary);
 
@@ -3149,6 +3149,8 @@
     font-size:clamp(2.4rem,4vw,4rem);
 
     line-height:1.15;
+
+    color: var(--white);
 
 }
 
@@ -3212,9 +3214,9 @@
 
     flex-direction:column;
 
-    background:#ffffff;
+    background: var(--secondary);
 
-    border:1px solid rgba(17,24,39,.07);
+    border:2px solid var(--gray);
 
     border-radius:26px;
 
@@ -3292,7 +3294,7 @@
 
     border-radius:18px;
 
-    background:rgba(255,122,0,.1);
+    background:var(--secondary);
 
     color:var(--primary);
 
@@ -3360,7 +3362,7 @@
 
     margin:0 0 30px;
 
-    color:#64748b;
+    color: var(--gray);
 
     line-height:1.75;
 
@@ -3385,7 +3387,7 @@
 
     gap:8px;
 
-    color:var(--dark);
+    color: var(--white);
 
     text-decoration:none;
 
@@ -3407,7 +3409,7 @@
 
 .offer-link:hover{
 
-    color:var(--secondary);
+    color:var(--gray);
 
 }
 
@@ -3967,14 +3969,16 @@ a{
 .why-design-decoded {
     position: relative;
     padding: 60px 0 120px;
-    background: #f8fafc;
+    background: var(--secondary);
     overflow: hidden;
+    border-top: 1px solid var(--gray);
 }
 
 .why-design-decoded .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    
 }
 
 
@@ -3999,12 +4003,12 @@ a{
 
     padding: 10px 20px;
 
-    border: 1px solid rgba(255, 122, 0, 0.25);
+    border: 1px solid var(--primary);
     border-radius: 999px;
 
-    background: rgba(255, 122, 0, 0.05);
+    background: var(--secondary);
 
-    color: #ff7a00;
+    color: var(--primary);
 
     font-family: Georgia, "Times New Roman", serif;
     font-size: 14px;
@@ -4034,7 +4038,7 @@ a{
 
     letter-spacing: -1.5px;
 
-    color: var(--dark);
+    color: var(--white);
 }
 
 .why-design-decoded .section-header h2 span {
@@ -4054,7 +4058,7 @@ a{
     font-size: 17px;
     line-height: 1.9;
 
-    color: #475569;
+    color: var(--white);
 }
 
 
@@ -4074,11 +4078,8 @@ a{
 
     border-radius: 999px;
 
-    background: linear-gradient(
-        90deg,
-        #ff7a00,
-        #6d28d9
-    );
+    background: var(--gradient);
+        
 }
 
 
@@ -4106,10 +4107,10 @@ a{
 
     padding: 40px;
 
-    border: 1px solid rgba(15, 23, 42, 0.08);
+    border: 2px solid var(--gray);
     border-radius: 24px;
 
-    background: #ffffff;
+    background: var(--secondary);
 
     box-shadow:
         0 18px 45px rgba(15, 23, 42, 0.07);
@@ -4156,14 +4157,14 @@ a{
 
     border-radius: 20px;
 
-    background: rgba(255, 122, 0, 0.08);
+    background: var(--secondary);
 
-    color: #ff7a00;
+    color: var(--primary);
 }
 
 .why-icon i {
-    width: 32px;
-    height: 32px;
+    width: 42px;
+    height: 42px;
 
     stroke-width: 2;
 }
@@ -4201,7 +4202,7 @@ a{
     font-size: 16px;
     line-height: 1.8;
 
-    color: #0f172a;
+    color: var(--gray);
 }
 
 
@@ -4439,13 +4440,13 @@ a{
 
             135deg,
 
-            rgba(255,122,0,.08),
+            rgba(156, 245, 114, 0.08),
 
-            rgba(109,40,217,.08)
+            rgb(40, 217, 93, 0.08)
 
         );
 
-    border:1px solid rgba(0,0,0,.06);
+    border:1px solid var(--primary);
 
     border-radius:36px;
 
@@ -4487,7 +4488,7 @@ a{
 
     border-radius:999px;
 
-    background:rgba(255,255,255,.65);
+    background:var(--secondary);
 
     color:var(--primary);
 
@@ -4547,7 +4548,7 @@ a{
 
     margin:0 0 35px;
 
-    color:#64748b;
+    color: var(--dark);
 
     line-height:1.8;
 
@@ -4663,7 +4664,7 @@ a{
 
     right:250px;
 
-    background:rgba(255,122,0,.13);
+    background:var(--primary);
 
 }
 
@@ -4678,7 +4679,7 @@ a{
 
     left:150px;
 
-    background:rgba(109,40,217,.12);
+    background:var(--gray);
 
 }
 
@@ -4719,7 +4720,7 @@ a{
 
     bottom:10px;
 
-    background:#6d28d9;
+    background: var(--secondary);
 
 }
 
@@ -4734,7 +4735,7 @@ a{
 
     height:8px;
 
-    background:#ff7a00;
+    background:var(--primary);
 
 }
 
@@ -4929,7 +4930,7 @@ a{
 
     justify-content:center;
 
-    border:1px solid rgba(255,122,0,.35);
+    border:1px solid var(--primary);
 
     border-radius:18px;
 
@@ -4996,7 +4997,7 @@ a{
 
 .services-final-cta__social-link:focus-visible{
 
-    outline:3px solid rgba(255,122,0,.30);
+    outline:3px solid var(--primary);
 
     outline-offset:4px;
 
@@ -5076,7 +5077,7 @@ a{
 .expertise-section {
     position: relative;
     padding: 50px 0;
-    background: #f8f9fb;
+    background: var(--secondary);
     overflow: hidden;
 }
 
@@ -5103,7 +5104,7 @@ a{
     padding: 8px 18px;
     margin-bottom: 26px;
 
-    border: 1px solid rgba(255, 122, 0, 0.22);
+    border: 1px solid var(--primary);
     border-radius: 999px;
 
     background: rgba(255, 122, 0, 0.04);
@@ -5136,7 +5137,7 @@ a{
     line-height: 1.08;
     letter-spacing: -0.035em;
 
-    color: var(--dark);
+    color: var(--white);
 }
 
 .expertise-header h2 span {
@@ -5192,7 +5193,7 @@ a{
 
     padding: 42px;
 
-    background: var(--white);
+    background: var(--secondary);
 
     border: 1px solid var(--border);
     border-radius: 24px;
@@ -5259,7 +5260,7 @@ a{
 
     color: var(--primary);
 
-    background: rgba(255, 122, 0, 0.08);
+    background: var(--secondary);
 }
 
 .primary-expertise__icon svg {
@@ -5293,7 +5294,7 @@ a{
 
     margin-bottom: 10px;
 
-    color: var(--primary);
+    color: var(--white);
 
     font-family: var(--body-font);
     font-size: 0.72rem;
@@ -5355,11 +5356,11 @@ a{
 }
 
 .expertise-status--professional {
-    color: var(--primary);
+    color: var(--white);
 
-    background: rgba(255, 122, 0, 0.07);
+    background: var(--secondary);
 
-    border: 1px solid rgba(255, 122, 0, 0.18);
+    border: 1px solid var(--white);
 }
 
 
@@ -5396,7 +5397,7 @@ a{
     width: 14px;
     height: 14px;
 
-    color: var(--primary);
+    color: var(--secondary);
 
     stroke-width: 2.5;
 }
@@ -5430,12 +5431,12 @@ a{
     padding: 8px 18px;
     margin-bottom: 24px;
 
-    border: 1px solid rgba(109, 40, 217, 0.16);
+    border: 1px solid var(--primary);
     border-radius: 999px;
 
-    background: rgba(109, 40, 217, 0.04);
+    background: var(--secondary);
 
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 .learning-section__header h3 {
@@ -5448,7 +5449,7 @@ a{
     line-height: 1.1;
     letter-spacing: -0.025em;
 
-    color: var(--dark);
+    color: var(--white);
 }
 
 .learning-section__header span {
@@ -5512,7 +5513,7 @@ a{
 
     padding: 30px;
 
-    background: var(--white);
+    background: var(--secondary);
 
     border: 1px solid var(--border);
     border-radius: 22px;
@@ -5604,7 +5605,7 @@ a{
 
 .learning-card__icon--web {
     color: var(--primary);
-    background: rgba(255, 122, 0, 0.08);
+    background: var(--secondary);
 }
 
 
@@ -5612,7 +5613,7 @@ a{
 
 .learning-card__icon--ai {
     color: var(--primary);
-    background: rgba(255, 122, 0, 0.08);
+    background: var(--secondary);
 }
 
 
@@ -5621,7 +5622,7 @@ a{
 .learning-card__icon--ui {
     color: var(--primary);
 
-    background: rgba(255, 122, 0, 0.08);
+    background: var(--secondary);
 }
 
 
@@ -5636,12 +5637,12 @@ a{
 
     padding: 7px 11px;
 
-    border: 1px solid rgba(109, 40, 217, 0.12);
+    border: 1px solid var(--white);
     border-radius: 999px;
 
     background: rgba(109, 40, 217, 0.04);
 
-    color: var(--secondary);
+    color: var(--white);
 
     font-family: var(--body-font);
     font-size: 0.66rem;
@@ -5804,6 +5805,11 @@ a{
         font-size: 0.93rem;
     }
 
+    .expertise-status--professional {
+        position: absolute;
+        top: -70px;
+        right: 0;
+    }
 
     /* Learning intro */
 
@@ -5990,7 +5996,7 @@ a{
 
         rgba(255, 122, 0, 0.15) 55deg,
         var(--primary) 75deg,
-        rgba(255, 122, 0, 0.85) 90deg,
+        rgba(31, 243, 31, 0.85) 90deg,
 
         transparent 115deg,
         transparent 180deg,
@@ -5999,7 +6005,7 @@ a{
 
         rgba(109, 40, 217, 0.15) 235deg,
         var(--secondary) 255deg,
-        rgba(109, 40, 217, 0.85) 275deg,
+        rgba(209, 209, 209, 0.85) 275deg,
 
         transparent 300deg,
         transparent 360deg
