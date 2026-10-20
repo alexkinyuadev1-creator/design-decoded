@@ -13,12 +13,17 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    max-width: 100%;
 }
 
 body {
     overflow-x: hidden;
+    overflow-y: auto;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 /* ==========================================================
    GLOBAL
@@ -448,4 +453,23 @@ html{
 
     }
 
+}
+
+
+/* Hide scrollbar while preserving page scrolling */
+
+/* Firefox */
+html {
+    scrollbar-width: none;
+}
+
+/* Chrome, Edge, Safari and Opera */
+html::-webkit-scrollbar {
+    display: none;
+}
+
+/* Keep vertical scrolling enabled */
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
 }
