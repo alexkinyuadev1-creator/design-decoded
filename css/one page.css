@@ -3538,7 +3538,7 @@
 
 /* Soft fade over the mosaic */
 
-.design-archive::before{
+.design-archive::before {
     opacity: 0.06;
 }
 
@@ -3549,7 +3549,7 @@
     background:
         linear-gradient(
             120deg,
-            #0f172a 0%,
+            #f9f9fa 0%,
             #202e35 0%,
             #35452d 100%
         );
@@ -3590,6 +3590,7 @@
 .archive-left .section-tag {
     width: fit-content;
     margin: 0 auto 28px;
+    background-color: var(--secondary);
 }
 
 /* Heading */
